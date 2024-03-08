@@ -33,5 +33,17 @@
     <ClCompile Include="function.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="homework.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fuction2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="array.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="array1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 
 // 재귀함수 - 자신을 실행시키는 함수
+
+
+
 
 //void out(int num) {
 //	printf("%d\n",num);
@@ -27,23 +32,6 @@
 //int ten(int x) {
 //	if (x == 1) return 1;
 //	return x + ten(x - 1);
-//}
-
-
-
-// 숙제 //
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <time.h>
-// 
-// Sleep(1000);
-// 
-//void draw(); 그림 그리는 함수
-//int game();  게임 시작함수
-//void result(int select); 결과 출력함수
-//
-//void main() {
-//	game();
 //}
 
 
