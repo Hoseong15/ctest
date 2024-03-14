@@ -69,6 +69,12 @@
     <ClCompile Include="gameStoryFunc.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="funpointer.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="malloc.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
