@@ -60,5 +60,19 @@
     <ClCompile Include="var3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="initial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameFunc.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameStoryFunc.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
