@@ -5,6 +5,68 @@
 #include <string.h>
 
 
+enum menu { save=1, load, end };//열거형/
+
+void main() {
+	enum menu m;
+	printf("1.저장  2.불러오기  3.종료 : ");
+	scanf("%d",(int*)&m);
+	//m = save;
+	switch (m)
+	{
+	case save:
+		printf("저장"); break;
+	case load:
+		printf("불러오기"); break;
+	case end:
+		printf("종료"); break;
+	}
+}
+
+
+//union test{
+//	int a;
+//	char b;
+//};
+//void main() {
+//	union test t1;
+//	t1.a = 0x123;
+//	if (t1.b == 35) {
+//		printf("리틀 앤디안");
+//	}
+//	else {
+//		printf("빅앤디안");
+//	}
+//	printf("%d %d\n", t1.a, t1.b);
+//}
+
+
+//union info { // 공용체(4byte)
+//	int num;
+//	char ch;
+//	float fnum;
+//};
+//
+//struct test{  // 구조체(12byte)
+//	int num;
+//	char ch;
+//	float fnum;
+//};
+//
+//
+//void main() {
+//	struct test t1;
+//	t1.num = 20; t1.ch = 'a'; t1.fnum = 3.14;
+//	printf("%d %c %2.f\n", t1.num, t1.ch, t1.fnum);
+//
+//	union info u1;
+//	u1.num = 20; u1.ch = 97; u1.fnum = 3.14;
+//	printf("%d %c %.2f", u1.num, u1.ch,u1.fnum);
+//
+//}
+
+
+
 /*
 	영화검색
 	1.	영화제목,개봉년도,감독,관람등급
@@ -15,99 +77,99 @@
 			   findAll 전체 영화 출력
 			   findByTitle 영화제목으로 검색하여 해당 영화 출력
 */
-typedef struct movie {
-	char title[50];
-	int year;
-	char director[20];
-	int rank;
-}movie;
-
-
-void init(movie  *m) {
-	strcpy(m[0].title, "인셉션");
-	m[0].year = 2010;
-	strcpy(m[0].director,"크리스토퍼 놀란");
-	m[0].rank = 12;
-
-	strcpy(m[1].title, "반지의제왕1");
-	m[1].year = 2001;
-	strcpy(m[1].director, "피터잭슨");
-	m[1].rank = 12;
-
-	strcpy(m[2].title, "반지의제왕2");
-	m[2].year = 2002;
-	strcpy(m[2].director, "피터잭슨");
-	m[2].rank = 12;
-
-	strcpy(m[3].title, "반지의제왕3");
-	m[3].year = 2003;
-	strcpy(m[3].director, "피터잭슨");
-	m[3].rank = 12;
-
-	strcpy(m[4].title, "해리포터 마법사의 돌");
-	m[4].year = 2001;
-	strcpy(m[4].director, "크리스 콜럼버스");
-	m[4].rank = 12;
-
-	strcpy(m[5].title, "해리포터 비밀의 방");
-	m[5].year = 2002;
-	strcpy(m[5].director, "크리스 콜럼버스");
-	m[5].rank = 12;
-
-	strcpy(m[6].title, "해리포터와 아즈카반의 죄수");
-	m[6].year = 2004;
-	strcpy(m[6].director, "알폰소 쿠아론");
-	m[6].rank = 12;
-
-	strcpy(m[7].title, "해리포터와 불의잔");
-	m[7].year = 2005;
-	strcpy(m[7].director, "마이크 뉴얼");
-	m[7].rank = 12;
-
-	strcpy(m[8].title, "해리포터와 불사조 기사단");
-	m[8].year = 2007;
-	strcpy(m[8].director, "데이비드 예이즈");
-	m[8].rank = 12;
-
-	strcpy(m[9].title, "해리포터와 혼혈왕자");
-	m[9].year = 2009;
-	strcpy(m[9].director, "크리스 콜럼버스");
-	m[9].rank = 12;
-
-
-}
-
-void findAll(movie*m, int size) {
-	printf("영화 출력!\n");
-	for (int i = 0; i < size; i++) {
-		printf("제목 : %s 개봉년도 : %d 감독 : %s 등급 : %d세\n", m[i].title, m[i].year, m[i].director, m[i].rank);
-	}
-}
-
-void findByTitle(movie*m, int size , const char* name) {
-	for (int i = 0; i < size; i++) {
-		if (strcmp(m[i].title , name) == 0) {
-			printf("제목 : %s 개봉년도 : %d 감독 : %s 등급 : %d세\n", m[i].title, m[i].year, m[i].director, m[i].rank);
-			return;
-		}
-	}
-	printf("해당 영화는 없습니다.");
-}
-
-
-void main() {
-	movie* m = (movie*)malloc(sizeof(movie) * 10);
-	init(m);
-	findAll(m,5);
-	
-	char name[50];
-	printf("제목을 검색하세요\n");
-	gets(name);
-	findByTitle(m, 10, name);
-	free(m);
-	
-	
-}
+//typedef struct movie {
+//	char title[50];
+//	int year;
+//	char director[20];
+//	int rank;
+//}movie;
+//
+//
+//void init(movie  *m) {
+//	strcpy(m[0].title, "인셉션");
+//	m[0].year = 2010;
+//	strcpy(m[0].director,"크리스토퍼 놀란");
+//	m[0].rank = 12;
+//
+//	strcpy(m[1].title, "반지의제왕1");
+//	m[1].year = 2001;
+//	strcpy(m[1].director, "피터잭슨");
+//	m[1].rank = 12;
+//
+//	strcpy(m[2].title, "반지의제왕2");
+//	m[2].year = 2002;
+//	strcpy(m[2].director, "피터잭슨");
+//	m[2].rank = 12;
+//
+//	strcpy(m[3].title, "반지의제왕3");
+//	m[3].year = 2003;
+//	strcpy(m[3].director, "피터잭슨");
+//	m[3].rank = 12;
+//
+//	strcpy(m[4].title, "해리포터 마법사의 돌");
+//	m[4].year = 2001;
+//	strcpy(m[4].director, "크리스 콜럼버스");
+//	m[4].rank = 12;
+//
+//	strcpy(m[5].title, "해리포터 비밀의 방");
+//	m[5].year = 2002;
+//	strcpy(m[5].director, "크리스 콜럼버스");
+//	m[5].rank = 12;
+//
+//	strcpy(m[6].title, "해리포터와 아즈카반의 죄수");
+//	m[6].year = 2004;
+//	strcpy(m[6].director, "알폰소 쿠아론");
+//	m[6].rank = 12;
+//
+//	strcpy(m[7].title, "해리포터와 불의잔");
+//	m[7].year = 2005;
+//	strcpy(m[7].director, "마이크 뉴얼");
+//	m[7].rank = 12;
+//
+//	strcpy(m[8].title, "해리포터와 불사조 기사단");
+//	m[8].year = 2007;
+//	strcpy(m[8].director, "데이비드 예이즈");
+//	m[8].rank = 12;
+//
+//	strcpy(m[9].title, "해리포터와 혼혈왕자");
+//	m[9].year = 2009;
+//	strcpy(m[9].director, "크리스 콜럼버스");
+//	m[9].rank = 12;
+//
+//
+//}
+//
+//void findAll(movie*m, int size) {
+//	printf("영화 출력!\n");
+//	for (int i = 0; i < size; i++) {
+//		printf("제목 : %s 개봉년도 : %d 감독 : %s 등급 : %d세\n", m[i].title, m[i].year, m[i].director, m[i].rank);
+//	}
+//}
+//
+//void findByTitle(movie*m, int size , const char* name) {
+//	for (int i = 0; i < size; i++) {
+//		if (strcmp(m[i].title , name) == 0) {
+//			printf("제목 : %s 개봉년도 : %d 감독 : %s 등급 : %d세\n", m[i].title, m[i].year, m[i].director, m[i].rank);
+//			return;
+//		}
+//	}
+//	printf("해당 영화는 없습니다.");
+//}
+//
+//
+//void main() {
+//	movie* m = (movie*)malloc(sizeof(movie) * 10);
+//	init(m);
+//	findAll(m,5);
+//	
+//	char name[50];
+//	printf("제목을 검색하세요\n");
+//	gets(name);
+//	findByTitle(m, 10, name);
+//	free(m);
+//	
+//	
+//}
 
 //typedef struct member{
 //	/*int age;

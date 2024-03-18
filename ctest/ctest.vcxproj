@@ -136,6 +136,14 @@
     <ClCompile Include="array2.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="bookData.c" />
+    <ClCompile Include="bookEnum.c" />
+    <ClCompile Include="bookFile.c" />
+    <ClCompile Include="bookFunc.c" />
+    <ClCompile Include="bookMain.c" />
+    <ClCompile Include="bookNew.c" />
+    <ClCompile Include="bookRent.c" />
+    <ClCompile Include="bookReturn.c" />
     <ClCompile Include="gameFunc.c" />
     <ClCompile Include="gameStoryFunc.c" />
     <ClCompile Include="initial.c" />
@@ -157,7 +165,15 @@
     <ClCompile Include="funpointer.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="structure.c" />
+    <ClCompile Include="structure.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="structure2.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="fopen.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="test.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -184,6 +200,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="book.h" />
     <ClInclude Include="game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

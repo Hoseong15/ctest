@@ -78,9 +78,42 @@
     <ClCompile Include="structure.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="structure2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fopen.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookMain.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookEnum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookFile.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookNew.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookRent.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookReturn.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookFunc.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bookData.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
