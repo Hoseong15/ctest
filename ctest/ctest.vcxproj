@@ -140,7 +140,9 @@
     <ClCompile Include="bookEnum.c" />
     <ClCompile Include="bookFile.c" />
     <ClCompile Include="bookFunc.c" />
-    <ClCompile Include="bookMain.c" />
+    <ClCompile Include="bookMain.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="bookNew.c" />
     <ClCompile Include="bookRent.c" />
     <ClCompile Include="bookReturn.c" />
