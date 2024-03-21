@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\cardGame">
+      <UniqueIdentifier>{76298598-c9d7-4f66-bdeb-1c88f883f390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bookSearch">
+      <UniqueIdentifier>{6d5cca45-f589-467e-80fd-6ba2c99619b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.c">
@@ -84,37 +90,58 @@
     <ClCompile Include="fopen.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bookMain.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="cardGame.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
-    <ClCompile Include="bookEnum.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="cardDraw.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
-    <ClCompile Include="bookFile.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="gameInit.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
-    <ClCompile Include="bookNew.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="blackJack.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
-    <ClCompile Include="bookRent.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="handOut.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
-    <ClCompile Include="bookReturn.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bookFunc.c">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="blackJackFile.c">
+      <Filter>소스 파일\cardGame</Filter>
     </ClCompile>
     <ClCompile Include="bookData.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookEnum.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookFile.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookFunc.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookMain.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookNew.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookRent.c">
+      <Filter>소스 파일\bookSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="bookReturn.c">
+      <Filter>소스 파일\bookSearch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="card.h">
+      <Filter>소스 파일\cardGame</Filter>
+    </ClInclude>
     <ClInclude Include="book.h">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\bookSearch</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
